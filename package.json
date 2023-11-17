@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "del-cli dist && tsc -m esnext --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
-    "prepack": "publint --level error && pnpm run build"
+    "prepack": "publint && pnpm run build"
   },
   "repository": {
     "type": "git",
