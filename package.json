@@ -2,10 +2,27 @@
   "name": "angpao-api",
   "version": "1.0.0",
   "description": "API wrapper around Truemoney Wallet's angpao system",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "xhayper",
-  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "del-cli dist && tsc -m esnext --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
+    "prepack": "publint --level error && pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhayper/AngpaoAPI.git"
+  },
   "keywords": [
     "truemoney",
     "angpao",
@@ -13,10 +30,12 @@
     "api",
     "wrapper"
   ],
-  "scripts": {
-    "build": "del-cli dist && tsc",
-    "prepack": "publint --level error && pnpm run build"
+  "author": "xhayper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhayper/AngpaoAPI/issues"
   },
+  "homepage": "https://github.com/xhayper/AngpaoAPI#readme",
   "dependencies": {
     "axios": "^1.6.2"
   },
