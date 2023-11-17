@@ -1,7 +1,7 @@
 {
   "name": "angpao-api",
   "version": "1.0.0",
-  "description": "Wrapper around Truemoney Wallet's angpao system",
+  "description": "API wrapper around Truemoney Wallet's angpao system",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "xhayper",
