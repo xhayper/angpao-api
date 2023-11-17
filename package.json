@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xhayper/AngpaoAPI.git"
+    "url": "git+https://github.com/xhayper/angpao-api.git"
   },
   "keywords": [
     "truemoney",
@@ -33,9 +33,9 @@
   "author": "xhayper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xhayper/AngpaoAPI/issues"
+    "url": "https://github.com/xhayper/angpao-api/issues"
   },
-  "homepage": "https://github.com/xhayper/AngpaoAPI#readme",
+  "homepage": "https://github.com/xhayper/angpao-api#readme",
   "dependencies": {
     "axios": "^1.6.2"
   },

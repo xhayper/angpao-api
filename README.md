@@ -1,4 +1,6 @@
-# AngpaoAPI
+# angpao-api
+
+[![npm version](https://img.shields.io/npm/v/angpao-api.svg)](https://www.npmjs.com/package/angpao-api)
 
 API wrapper around Truemoney Wallet's angpao system
 
