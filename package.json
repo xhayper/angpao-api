@@ -1,0 +1,28 @@
+{
+  "name": "angpao-api",
+  "version": "1.0.0",
+  "description": "Wrapper around Truemoney Wallet's angpao system",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "xhayper",
+  "license": "MIT",
+  "keywords": [
+    "truemoney",
+    "angpao",
+    "truemoneywallet",
+    "api",
+    "wrapper"
+  ],
+  "scripts": {
+    "build": "del-cli dist && tsc",
+    "prepack": "publint --level error && pnpm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "del-cli": "^5.1.0",
+    "publint": "^0.2.5"
+  }
+}
